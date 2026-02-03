@@ -2,22 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>For You ❤️</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- PAGE 1 -->
   <div class="page" id="page1">
     <h1 class="fade">Heyyyyy Rasmalai ❤️</h1>
     <p class="fade">I was thinking about you, so I made this</p>
     <button onclick="startExperience()">Next →</button>
   </div>
 
-  <!-- PAGE 2 -->
   <div class="page hidden" id="page2">
-    <img src="assets/images/photo.jpg" class="photo fade">
+    <img src="photo.jpg" class="photo fade" alt="Our Photo">
     <p class="fade">
       We really need to take more good pictures haha.<br>
       Falling very short on this task right now.
@@ -25,7 +24,6 @@
     <button onclick="nextPage(3)">Next →</button>
   </div>
 
-  <!-- PAGE 3 : LOVE NOTE -->
   <div class="page hidden" id="page3">
     <div class="love-note">
       <p class="fade">
@@ -42,7 +40,7 @@
       </p>
 
       <p class="fade">
-        From your weird harkate to your smallest habits  
+        From your weird harkate to your smallest habits<br>
         (we can work on the messy part tho, haha),<br>
         I’ve grown to adore every part of you.<br>
         Being around you feels easy in a way I don’t take for granted.
@@ -75,14 +73,12 @@
     <button onclick="nextPage(4)">Next →</button>
   </div>
 
-  <!-- PAGE 4 -->
   <div class="page hidden" id="page4">
     <h1 class="fade">Will you be my Valentine? 💖</h1>
     <button onclick="yes()">Yes 💕</button>
     <button onmouseover="moveNo(this)">No 😐</button>
   </div>
 
-  <!-- PAGE 5 -->
   <div class="page hidden" id="page5">
     <h1 class="fade">YAYYYYYYYYY ❤️</h1>
     <p class="fade">
@@ -91,9 +87,8 @@
     </p>
   </div>
 
-  <!-- MUSIC -->
   <audio id="bgMusic" loop>
-    <source src="assets/music/song.mp3" type="audio/mpeg">
+    <source src="song.mp3" type="audio/mpeg">
   </audio>
 
   <button id="musicToggle" onclick="toggleMusic()">🎶</button>
